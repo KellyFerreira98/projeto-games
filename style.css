@@ -1,0 +1,156 @@
+body {
+    background: #97c9fb17;
+}
+
+.header {
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 150px;
+}
+
+.logo-footer {
+    max-width: 100px;
+}
+
+.card_area>div {
+    margin-bottom: 10px;
+}
+
+.card_area img {
+    width: 100%;
+    height: 220px;
+    margin-bottom: 20px;
+}
+
+.infos {
+    margin-top: 20px;
+}
+
+.infos h1 {
+    font-size: 1.4em;
+}
+
+.navbar-itens {
+    width: 100%;
+    justify-content: space-between;
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.titulo-destaques {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.titulo-section {
+    font-style: italic;
+}
+
+.card_area {
+    margin-top: 30px;
+}
+
+.carousel-indicators li {
+    background-color: black;
+}
+
+.carousel-indicators {
+    position: unset;
+    margin-top: 10px;
+}
+
+.descricao-jogo>span {
+    display: block;
+}
+
+.avaliacao {
+    color: red;
+}
+
+.section_infos {
+    background: white;
+    padding: 20px;
+    min-height: 220px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.footer {
+    padding: 30px 0px 0px 30px;
+    background: white;
+}
+
+/* Loader */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #97c9fb;
+    /* cor do background que vai ocupar o body */
+    z-index: 999;
+    /* z-index para jogar para frente e sobrepor tudo */
+}
+
+#preloader .inner {
+    position: absolute;
+    top: 50%;
+    /* centralizar a parte interna do preload (onde fica a animação)*/
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bolas>div {
+    display: inline-block;
+    background-color: #fff;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    margin: 3px;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-name: animarBola;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+.bolas>div:nth-child(1) {
+    animation-duration: 0.75s;
+    animation-delay: 0;
+}
+
+.bolas>div:nth-child(2) {
+    animation-duration: 0.75s;
+    animation-delay: 0.12s;
+}
+
+.bolas>div:nth-child(3) {
+    animation-duration: 0.75s;
+    animation-delay: 0.24s;
+}
+
+@keyframes animarBola {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    16% {
+        -webkit-transform: scale(0.1);
+        transform: scale(0.1);
+        opacity: 0.7;
+    }
+
+    33% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
